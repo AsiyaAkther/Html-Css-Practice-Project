@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --color-primary: #1995ad;
+    --color-secondary: #a1d6e2;
+    --text-color-white: #f1f1f2;
+    --text-color-dark: #333;
+    --card-background: #73605b
+  }
+
+/* Navbar start here */
+.heading {
+	background-color: var(--color-primary);
+	padding: 20px 80px;
+	width: 100%;
+}
+.nav-content{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo h2 {
+	color: var(--text-color-white);
+	font-size: 2rem
+}
+.logo .fa-autoprefixer {
+	font-size: 50px;
+	color: var(--text-color-white);
+	padding: 10px 0
+}
+
+.navbar ul li {
+	list-style-type: none;
+	float: left
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	padding: 15px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 10px;
+	transition: 1s
+}
+.navbar ul li a:hover {
+	background-color: #fff;
+	color: #972a03;
+	transition: 1s
+}
+/* Navbar end here */
+
+  /* Hero section start */
+  .hero {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+	padding: 100px 80px;
+	position: relative;
+}
+.hero img {
+	border-radius: 50%;
+	width: 12%;
+	transition: transform 2s;
+}
+.hero img:hover {
+	transform: rotate(360deg);
+}
+.header-top-img {
+	position: absolute;
+	top: 5%;
+	right: 6%;
+}
+.hero-desc {
+	clear: both;
+}
+.hero-desc h1 {
+	width: 700px;
+	text-align: center;
+	font-family: MonteCarlo, cursive;
+	font-weight: 700;
+	margin: 0 auto;
+	margin-bottom: 20px;
+    font-size: 5rem;
+    color: var(--text-color-dark);
+}
+.hero-desc p {
+	width: 500px;
+	text-align: center;
+	font-weight: 400;
+	margin: 0 auto;
+	color: var(--text-color-dark);
+	margin-bottom: 20px
+}
+.header-bottom-img {
+	position: absolute;
+	bottom: 5%;
+	left: 6%
+}
+  /* Hero section end */
+
+  /* About me section start */
+  .about-me {
+	padding: 60px 80px;
+	background-color: var(--color-secondary);
+	clear: both;
+}
+.about-me-content{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.about-me h2 {
+	color: var(--text-color-dark);
+	padding: 15px 0;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 3rem;
+    text-align: center;
+}
+.about-me-details{
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: 0.7fr 1fr;
+    align-items: start;
+}
+.about-me-img img {
+	width: 100%;
+}
+.about-me-desc {
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+.about-me-desc p {
+	color: var(--text-color-dark);
+	font-size: 1rem;
+	padding: 15px 0;
+	margin: 5px 0;
+	border-bottom: 1px solid var(--card-background);
+}
+.about-me-desc p.no-border{
+    border: none;
+    margin-bottom: 30px;
+}
+.about-1st-para {
+	border: none !important
+}
+.download {
+	margin: 20px 0;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding: 10px 25px;
+	background: var(--card-background);
+	border: none;
+	border-radius: 50px;
+	transition: 1.5s;
+	cursor: pointer;
+    color: var(--text-color-white)
+}
+.download:hover {
+	transition: 1.5s;
+	transform: scale(1.2)
+}
+  /* About me section end */
+
+/* Skill section start */
+.prof-experience {
+    max-width: 1320px;
+    margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.experience-cards {
+	background: var(--card-background);
+	padding: 40px 20px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 15px 0 rgba(92, 92, 92, .55);
+	box-shadow: 0 0 15px 0 rgba(92, 92, 92, .55);
+	transition: 1s;
+}
+
+.experience-cards:hover {
+	transition: 1s;
+	box-shadow: none;
+}
+
+.card-icon {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.card-icon img {
+	border: 3px solid var(--text-color-white);
+	padding: 10px;
+	border-radius: 50%;
+	width: 80px;
+}
+
+.card-title {
+	background: var(--text-color-dark);
+	padding: 10px 0;
+	color: var(--text-color-white);
+	text-align: center;
+	font-size: .9rem;
+    border-radius: 50px;
+}
+.crad-desc {
+	margin-top: 10px;
+}
+.crad-desc ol{
+    padding-left: 20px;
+}
+.crad-desc ol li {
+	margin: 10px 0;
+	border-bottom: 1px solid #afabab;
+	padding-bottom: 10px;
+	color: var(--text-color-white);
+}
+.crad-desc ol li h6 {
+	font-size: 1rem;
+	color: var(--text-color-white);
+}
+.crad-desc ol li p {
+	font-size: .9rem;
+	color: #d4cbcb;
+}
+.experience-cards .crad-desc ul li {
+	font-weight: bolder;
+	margin: 40px 0;
+	color: var(--text-color-white);
+	text-transform: uppercase;
+	list-style-type: none;
+	position: relative;
+}
+.experience-cards .crad-desc ul li::before {
+	content: '';
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 0;
+	background-color: var(--color-secondary);
+	width: 100%;
+	height: 20px;
+	border-radius: 50px;
+}
+.experience-cards .crad-desc ul li::after {
+	content: '';
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 0;
+	background-color: var(--text-color-white);
+	width: 0;
+	height: 20px;
+	border-radius: 50px;
+}
+.experience-cards .crad-desc ul li.html::after {
+	width: 100%;
+}
+.experience-cards .crad-desc ul li.css::after {
+	width: 95%;
+}
+.experience-cards .crad-desc ul li.boostrap::after {
+	width: 60%;
+}
+.experience-cards .crad-desc ul li.js::after {
+	width: 20%;
+}
+/* Skill section end */
+
+/* Footer start */
+.footer{
+    max-width: 1320px;
+    width: 100%;
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 50px 80px;
+}
+.footer input{
+    margin:0;
+    height:40px;
+    margin-right:-25px;
+    border:none;
+    outline:0;
+    width: 300px;
+    border-radius: 50px 0 0 50px;
+    padding: 0 30px;
+}
+.submit-btn{
+    height: 40px;
+    border-radius:0 50px 50px 0;
+    padding:0 3%;
+    color: var(--text-color-white);
+    background-color: var(--card-background);
+    border:none;
+    outline:0;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px
+}
+.footer ul li{
+    list-style-type: none;
+    float: left;
+    color: var(--text-color-white);
+    font-size: 20px;
+}
+/* Footer end */
